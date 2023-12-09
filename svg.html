@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image Transformation</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Set your desired background color */
+}
+
+.header-with-image {
+    position: relative;
+    font-size: 24px; /* Set your desired font size for the h1 */
+    color: #333; /* Set your desired text color */
+}
+
+.header-with-image img {
+    position: absolute;
+    top: 8;
+    left: -15;
+    width: 250px;
+    
+    /* object-fit: cover; Ensures the image covers the entire container */
+    opacity: 1; /* Set your desired opacity for the image */
+    transform: rotate(4deg); /* Apply the desired transformation, e.g., rotation */
+}
+
+</style>
+<body>
+    <h1 class="header-with-image">
+        Your Text Here
+        <img src="f.png" alt="Image" width="150px">
+    </h1>
+</body>
+</html>
