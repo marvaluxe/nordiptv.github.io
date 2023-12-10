@@ -1519,25 +1519,6 @@ section div h1 {
 
 
 
-    .container_chmp::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        /* width: 60vh;
-        min-height: 50vh; */
-        background-image: url('iptv_champions_league_1.png');
-        /* Replace with your image file */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        opacity: 1;
-        /* Adjust the opacity as needed */
-        z-index: -2;
-    }
-
     .ftt {
         display: flex;
         flex-direction: column;
