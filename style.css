@@ -177,7 +177,7 @@ a:nth-child(5):hover~.animation {
     position: relative;
     height: 90vh;
     width: 100%;
-    background-image: url("/overlay.png");
+    background-image: url("overlay.png");
     background-size: cover;
     background-position: top 25% right 0;
     overflow: hidden;
