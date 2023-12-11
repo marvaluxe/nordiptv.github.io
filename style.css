@@ -330,6 +330,7 @@ a:nth-child(5):hover~.animation {
     margin-bottom: 1px;
     position: relative;
     z-index: 1;
+    /* margin-bottom: 1px; */
 }
 
 .img_Overlay4 {
@@ -888,7 +889,7 @@ section div h1 {
 
 /*services  */
 .section1 {
-    height: 220vh;
+    /* height: 120vh; */height: auto;
     width: 100%;
     display: grid;
     place-items: center;
@@ -1967,9 +1968,9 @@ section div h1 {
 /* Samsung devices */
 @media only screen and (max-width: 480px) {
     .section1 {
-        height: 300vh;
+        /* height: 300vh;height: auto; */
         width: 100%;
-        display: grid;
+        display: grid;height: auto;
         place-items: center;
     }
 
@@ -1978,8 +1979,8 @@ section div h1 {
 /* Infinix devices */
 @media only screen and (max-width: 600px) {
     .section1 {
-        height: 300vh;
-        width: 100%;
+        /* height: 300vh; */
+        width: 100%;height: auto;
         display: grid;
         place-items: center;
     }
@@ -1988,7 +1989,8 @@ section div h1 {
 /* Redmi devices */
 @media only screen and (max-width: 768px) {
     .section1 {
-        height: 300vh;
+        /* height: 206vh; */height: auto;
+        /* background-color: red; */
         width: 100%;
         display: grid;
         place-items: center;
@@ -1998,10 +2000,11 @@ section div h1 {
 /* iPhone devices */
 @media only screen and (max-width: 414px) {
     .section1 {
-        height: 360vh;
+        /* height: 209vh; */height: auto;
         width: 100%;
         display: grid;
         place-items: center;
+        padding-bottom: 150px;
     }
 }
 
