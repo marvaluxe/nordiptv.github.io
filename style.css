@@ -11,6 +11,257 @@ body {
     scroll-behavior: smooth;
 }
 
+/* header1 */
+.custom-header-container {
+            
+    position: relative;
+    min-height: 100vh;
+    background: url("overlay.png") center/cover no-repeat;
+}
+
+.custom-header {
+    position: fixed;
+    /* hna */
+    top: 0; 
+    /* margin-top: 45px; */
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.custom-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+
+
+
+    
+}
+
+.custom-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .1), transparent);
+    transition: .5s;
+}
+
+.custom-header:hover::after {
+    left: 100%;
+}
+
+.custom-header img {
+    width: 180px;
+    margin: 0px;
+}
+
+.custom-navbar a {
+    font-size: 1.15rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+#custom-checkbox1 {
+    display: none;
+}
+
+.custom-icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.custom-navbar a:hover {
+    color: rgb(140, 140, 140);
+    transition: .1s ease-in-out;
+}
+
+@media (max-width: 992px) {
+    .custom-header {
+        padding: 1.3rem 5%;
+    }
+}
+
+
+@media (max-width: 492px) {
+
+    .center-content h2 {
+        font-size: 2rem;
+        color: #000000;
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+    .custom-icons {
+        display: inline-flex;
+    }
+
+    #custom-checkbox1:checked~.custom-icons #custom-menu-icon {
+        display: none;
+    }
+
+    .custom-icons #custom-close-icon {
+        display: none;
+    }
+
+    #custom-checkbox1:checked~.custom-icons #custom-close-icon {
+        display: block;
+    }
+
+    .custom-navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgba(0, 0, 0, .2);
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #custom-checkbox1:checked~.custom-navbar {
+        height: 17.7rem;
+    }
+
+    .custom-navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-10px);
+        transition: .3s ease;
+        opacity: 0;
+    }
+
+    #custom-checkbox1:checked~.custom-navbar a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    padding: 0 20px;
+    /* Added padding */
+}
+
+.center-content h2 {
+    font-size: 1.3rem;
+    color: #2284e6;
+    margin-bottom: 0.5rem;
+}
+
+.center-content h1 {
+    font-size: 1.7rem;
+    color: #2284e6;
+    margin-bottom: 1rem;
+}
+
+.flash-sales {
+    font-size: .9rem;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.start-button {
+    margin: 1.1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    position: relative;
+    transition: 0.3s;
+}
+
+.start-button::before {
+    content: "FREE";
+    display: block;
+    font-size: 0.8rem;
+    background-color: #ffffff;
+    color: #2284e6;
+    border-radius: 6px;
+    padding: 2px 4px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-5px, -30%);
+    transition: .3s;
+}
+
+.start-button:hover::before {
+    transform: translate(-5px, -60%);
+}
+
+.start-button:hover {
+    background-color: #fff;
+    color: #2284e6;
+}
+
+.notice-bar {
+    background-color: #2284e6; /* Updated background color */
+    color: #fff; /* Updated text color */
+    text-align: center;
+    padding: 2px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    letter-spacing: .1rem;
+    user-select: none; 
+}
+
+/* header1 */
+
+
+
+
+
+
 .brand-slides img {
     transition: transform .3s;
 }
@@ -22,13 +273,7 @@ body {
     transform: scale(1.4);
 }
 
-.noticebar {
-    color: #7bdcff;
-    background-color: #4485fc;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-}
+ 
 
 
 .main_blue {
@@ -39,9 +284,10 @@ body {
 .plan {
     color: #4485fc;
 }
-
+/* header 9dim */
+/* 
 .logo {
-    /* padding-right: 200px; */
+  
     width: 170px;
 }
 
@@ -68,7 +314,7 @@ nav {
     position: relative;
     width: 590px;
     height: 50px;
-    /* background-color: #34495e; */
+   
     border-radius: 8px;
     font-size: 0;
 }
@@ -81,7 +327,7 @@ nav a {
     position: relative;
     z-index: 1;
     text-decoration: none;
-    /* text-transform: uppercase; */
+   
     text-align: center;
     color: white;
     cursor: pointer;
@@ -121,7 +367,7 @@ a:nth-child(1):hover~.animation {
     width: 100px;
     left: 0;
     background-color: #1a4bbc;
-    /* background-color: #1abc9c; */
+   
 
 }
 
@@ -130,7 +376,7 @@ a:nth-child(2):hover~.animation {
     width: 110px;
     left: 100px;
     background-color: #205cea;
-    /* background-color: #e74c3c; */
+ 
 
 }
 
@@ -139,7 +385,7 @@ a:nth-child(3):hover~.animation {
     width: 100px;
     left: 210px;
     background-color: #0651ff;
-    /* background-color: #3498db; */
+  
 
 }
 
@@ -148,7 +394,7 @@ a:nth-child(4):hover~.animation {
     width: 160px;
     left: 310px;
     background-color: #144ed6;
-    /* background-color: #9b59b6; */
+   
 
 }
 
@@ -157,7 +403,7 @@ a:nth-child(5):hover~.animation {
     width: 120px;
     left: 470px;
     background-color: #0043e0;
-    /* background-color: #e67e22; */
+  
 
 }
 
@@ -181,8 +427,8 @@ a:nth-child(5):hover~.animation {
     background-size: cover;
     background-position: top 25% right 0;
     overflow: hidden;
-}
-
+} */
+/* header 9dim */
 .centered {
     display: flex;
     flex-direction: column;
