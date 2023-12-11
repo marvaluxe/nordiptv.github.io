@@ -455,6 +455,11 @@ a:nth-child(5):hover~.animation {
     font-size: 14px;
 }
 
+.items2{
+    padding: 10px;
+    font-size: 14px;
+}
+
 .td_items {
     text-align: left;
     color: #7a7a7a;
@@ -628,12 +633,30 @@ li {
     color: #4485fc;
 
 }
+.prix2 {
 
+    font-size: 45px;
+    border-bottom: 1px solid #ababab;
+    margin: 20px;
+    padding-bottom: 5px;
+    position: relative;
+    font-weight: 500;
+    font-family: 'Noto Sans', sans-serif;
+    color: #4485fc;
+
+}
 .prix::before {
     font-size: 25px;
     position: absolute;
     content: "Dhs";
     right: 7px;
+
+}
+.prix2::before {
+    font-size: 25px;
+    position: absolute;
+    content: "Dhs";
+     right: -7px;
 
 }
 
