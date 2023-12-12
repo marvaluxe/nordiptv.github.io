@@ -11,7 +11,9 @@ body {
     scroll-behavior: smooth;
 }
 
-/* header1 */
+/* header1 */ 
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 .custom-header-container {
             
     position: relative;
@@ -423,7 +425,7 @@ a:nth-child(5):hover~.animation {
     position: relative;
     height: 90vh;
     width: 100%;
-    background-image: url("overlay.png");
+    background-image: url("/overlay.png");
     background-size: cover;
     background-position: top 25% right 0;
     overflow: hidden;
@@ -1793,10 +1795,10 @@ section div h1 {
         display: flex;
         flex-direction: column;
     }
-
+/* 
     .your-website-wrapper {}
-
-
+hhhhhh
+ */
 
 
 
