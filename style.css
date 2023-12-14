@@ -11,11 +11,11 @@ body {
     scroll-behavior: smooth;
 }
 
-/* header1 */ 
- @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* header1 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 .custom-header-container {
-            
+
     position: relative;
     min-height: 100vh;
     background: url("overlay.png") center/cover no-repeat;
@@ -24,7 +24,7 @@ body {
 .custom-header {
     position: fixed;
     /* hna */
-    top: 0; 
+    top: 0;
     /* margin-top: 45px; */
     left: 0;
     width: 100%;
@@ -49,7 +49,7 @@ body {
 
 
 
-    
+
 }
 
 .custom-header::after {
@@ -246,15 +246,17 @@ body {
 }
 
 .notice-bar {
-    background-color: #2284e6; /* Updated background color */
-    color: #fff; /* Updated text color */
+    background-color: #2284e6;
+    /* Updated background color */
+    color: #fff;
+    /* Updated text color */
     text-align: center;
     padding: 2px;
     position: sticky;
     top: 0;
     z-index: 1000;
     letter-spacing: .1rem;
-    user-select: none; 
+    user-select: none;
 }
 
 /* header1 */
@@ -275,7 +277,7 @@ body {
     transform: scale(1.4);
 }
 
- 
+
 
 
 .main_blue {
@@ -286,6 +288,7 @@ body {
 .plan {
     color: #4485fc;
 }
+
 /* header 9dim */
 /* 
 .logo {
@@ -611,6 +614,7 @@ a:nth-child(5):hover~.animation {
     z-index: -1;
 
 }
+
 .img_Overlay6 {
     width: 250px;
     transform: rotate(-2deg);
@@ -621,6 +625,7 @@ a:nth-child(5):hover~.animation {
     z-index: -1;
 
 }
+
 .img_Overlay6 {
     width: 250px;
     transform: rotate(-2deg);
@@ -631,6 +636,7 @@ a:nth-child(5):hover~.animation {
     z-index: -1;
 
 }
+
 .img_Overlay7 {
     width: 250px;
     transform: rotate(-6deg);
@@ -732,7 +738,7 @@ a:nth-child(5):hover~.animation {
     font-size: 14px;
 }
 
-.items2{
+.items2 {
     padding: 10px;
     font-size: 14px;
 }
@@ -837,7 +843,7 @@ li {
 
 
 /* subscribe */
-.btn {
+.btn2 {
 
     font-family: Roboto, sans-serif;
     font-weight: 0;
@@ -856,7 +862,7 @@ li {
     cursor: pointer;
 }
 
-.btn:hover {
+.btn2:hover {
 
     transition: 352ms;
     padding: 10px 30px;
@@ -867,7 +873,7 @@ li {
 }
 
 
-.btn2 {
+.btn22 {
 
     font-family: Roboto, sans-serif;
     font-weight: 0;
@@ -886,7 +892,7 @@ li {
     cursor: pointer;
 }
 
-.btn2:hover {
+.btn22:hover {
 
     transition: 352ms;
     padding: 10px 30px;
@@ -910,6 +916,7 @@ li {
     color: #4485fc;
 
 }
+
 .prix2 {
 
     font-size: 45px;
@@ -922,6 +929,7 @@ li {
     color: #4485fc;
 
 }
+
 .prix::before {
     font-size: 25px;
     position: absolute;
@@ -929,11 +937,12 @@ li {
     right: 7px;
 
 }
+
 .prix2::before {
     font-size: 25px;
     position: absolute;
     content: "Dhs";
-     right: -7px;
+    right: -7px;
 
 }
 
@@ -1167,7 +1176,7 @@ section div h1 {
 }
 
 
-.icons{
+.icons {
     font-size: 2.8rem;
     color: white;
     cursor: pointer;
@@ -1175,10 +1184,8 @@ section div h1 {
 }
 
 
-@media (max-width: 992px)
-{
-    .heaader
-    {
+@media (max-width: 992px) {
+    .heaader {
         padding: 1.3rem 5%;
     }
 }
@@ -1189,7 +1196,8 @@ section div h1 {
 
 /*services  */
 .section1 {
-    /* height: 120vh; */height: auto;
+    /* height: 120vh; */
+    height: auto;
     width: 100%;
     display: grid;
     place-items: center;
@@ -1528,7 +1536,10 @@ section div h1 {
 
 /* faq2 */
 .fq_wrapper {
-    min-height: 70vh;
+    /* min-height: 70vh; */
+    margin-bottom: 110vh;
+    height: auto;
+
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -1542,6 +1553,14 @@ section div h1 {
 .fq_title {
     font-size: 2rem;
     margin: 1rem 0rem;
+}
+
+.fq_title2 {
+    font-size: 1rem;
+    margin: .3rem 0rem;
+    text-align: center;
+    color: #002d63;
+    text-decoration: underline;
 }
 
 .fq {
@@ -1586,6 +1605,20 @@ section div h1 {
     animation: fade 1s ease-in-out;
 }
 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
 .fq.active i {
     transform: rotate(180deg);
 }
@@ -1629,7 +1662,7 @@ section div h1 {
 .bar_container {
     /* height: 200px; */
     /* max-width: 100%; */
-    width: 370px;
+    width: 380px;
     margin: 10% auto;
     text-align: left;
     /* background-color: red; */
@@ -1800,6 +1833,7 @@ section div h1 {
     /* Adjust the opacity as needed */
     z-index: -2;
 }
+
 /* hhhhhhhhh */
 @media (max-width: 768px) {
     .content_chmp h1 {
@@ -1807,26 +1841,33 @@ section div h1 {
         font-size: 20px;
         text-align: center;
     }
+
     .container_chmp {
         position: relative;
         height: 40vh;
         /* Adjust as needed */
         overflow: hidden;
-    
+
     }
 
 
+    .contact-form >h2{
+  
+        font-size: 30px;
+        text-align: center;
+    }
 
     .ftt {
         display: flex;
         flex-direction: column;
     }
-/* 
+
+    /* 
     .your-website-wrapper {}
 hhhhhh
  */
 
- 
+
 
 }
 
@@ -1859,8 +1900,8 @@ hhhhhh
     }
 
 
-    #hamburger-btn,
-    #close-menu-btn {
+    #hamburger-btn2,
+    #close-menu-btn2 {
         display: block;
     }
 
@@ -2132,7 +2173,7 @@ hhhhhh
     .about_img {
         text-align: center;
     }
- 
+
     .about_bar {
         order: 2;
     }
@@ -2141,7 +2182,7 @@ hhhhhh
         width: 100%;
         height: auto;
         max-width: 100%;
-        
+
     }
 
 
@@ -2153,7 +2194,7 @@ hhhhhh
 
 
 
-  
+
     .bar_title1 {
         text-align: center;
     }
@@ -2259,7 +2300,8 @@ hhhhhh
     .section1 {
         /* height: 300vh;height: auto; */
         width: 100%;
-        display: grid;height: auto;
+        display: grid;
+        height: auto;
         place-items: center;
     }
 
@@ -2269,7 +2311,8 @@ hhhhhh
 @media only screen and (max-width: 600px) {
     .section1 {
         /* height: 300vh; */
-        width: 100%;height: auto;
+        width: 100%;
+        height: auto;
         display: grid;
         place-items: center;
     }
@@ -2278,7 +2321,8 @@ hhhhhh
 /* Redmi devices */
 @media only screen and (max-width: 768px) {
     .section1 {
-        /* height: 206vh; */height: auto;
+        /* height: 206vh; */
+        height: auto;
         /* background-color: red; */
         width: 100%;
         display: grid;
@@ -2289,7 +2333,8 @@ hhhhhh
 /* iPhone devices */
 @media only screen and (max-width: 414px) {
     .section1 {
-        /* height: 209vh; */height: auto;
+        /* height: 209vh; */
+        height: auto;
         width: 100%;
         display: grid;
         place-items: center;
@@ -2303,5 +2348,48 @@ hhhhhh
 
 
 
+/* legal */
+
+.r2 {
+    color: #555;
+}
+
+.r22 {
+    color: #ffffff;
+}
+
+.legal {
+    color: #ffffff;
+    text-decoration: none;
+    transform: 350ms;
+}
+
+.legal:hover {
+    color: #9d9d9d;
+    text-decoration: none;
+    transform: 350ms;
+}
+
+.r3 {
+    font-size: 1.0rem;
+    color: rgb(106, 106, 106);
+    text-align: left;
+    margin-top: 1rem;
+    width: 80%;
+    left: 150px;
+    top: 20px;
+    position: relative;
+}
+
+.r4 {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.r4:hover {
+    text-decoration: underline;
+}
+
+/* legal */
 
 /* respo_media */
