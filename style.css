@@ -1834,6 +1834,7 @@ section div h1 {
     z-index: -2;
 }
 
+
 /* hhhhhhhhh */
 @media (max-width: 768px) {
     .content_chmp h1 {
@@ -1849,14 +1850,19 @@ section div h1 {
         overflow: hidden;
 
     }
-
-
+    .resseler_prg
+    {
+        font-size: 20px;
+        color: white;
+        text-align: left;
+        /* text-indent: 0px; */
+    }
     .contact-form >h2{
   
         font-size: 30px;
         text-align: center;
     }
-
+    
     .ftt {
         display: flex;
         flex-direction: column;
