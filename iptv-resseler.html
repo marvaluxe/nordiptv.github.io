@@ -71,9 +71,19 @@
                 <a href="iptv-resseler.html" style="--i:2;">Resseler</a>
                 <a href="index.html#plan" style="--i:3;">Our Plans</a>
                 <a href="#" style="--i:4;">How to use it?</a>
+                <!-- Language switcher -->
+
+              
             </nav>
         </header>
         <section class="contact-form">
+            <div class="chooseLang">
+                <div>
+                    <span id="es-lang" class="lang es-lang" onclick="changeLang('espanol', this)"></span>
+                    <span id="pt-lang" class="lang pt-lang" onclick="changeLang('português', this)"></span>
+                    <span id="en-lang" class="lang en-lang chosen" onclick="changeLang('english', this)"></span>
+                </div>
+            </div>
 
 
             <h3 class="mb-1 text-center" style="color: white;font-weight: bold;">Become An IPTV Reseller</h3>
@@ -159,7 +169,8 @@
 
             <section class="section1" id="chekk" style="overflow: hidden;padding: 15px;">
                 <div class="row">
-                    <h2 class="section-heading" style="color: #ffffff;text-align: center;">Just a few more reasons on why you should choose
+                    <h2 class="section-heading" style="color: #ffffff;text-align: center;">Just a few more reasons on
+                        why you should choose
                         Our Services
                     </h2>
                 </div>
@@ -408,7 +419,27 @@
         /*MODIFICATION END*/
 
         /*MODIFICATION END*/
+        function changeLang(language, el) {
+            var container = document.querySelector('.chooseLang').classList;
+            el = el.classList;
 
+            if (container.contains('open')) {
+                container.remove('open');
+                if (!el.contains('chosen')) {
+
+                    document.querySelector('.chooseLang .chosen').classList.remove('chosen');
+                    el.add('chosen');
+
+                    console.log(language + ' chosen')
+                    // your code
+
+                }
+                return;
+            }
+
+            container.add('open');
+
+        }
     </script>
 
     <!-- <script src="js/jquery.min.js"></script>
