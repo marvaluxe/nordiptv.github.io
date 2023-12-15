@@ -1608,7 +1608,7 @@ section div h1 {
 
 
 
- 
+
 
 
 
@@ -1850,24 +1850,25 @@ section div h1 {
         overflow: hidden;
 
     }
-    .resseler_prg
-    {
+
+    .resseler_prg {
         font-size: 20px;
         color: white;
         text-align: left;
         /* text-indent: 0px; */
     }
-    .contact-form >h2{
-  
+
+    .contact-form>h2 {
+
         font-size: 30px;
         text-align: center;
     }
-    
+
     .ftt {
         display: flex;
         flex-direction: column;
     }
-   
+
     /* 
     .your-website-wrapper {}
 hhhhhh
@@ -2418,41 +2419,60 @@ hhhhhh
     /* border: 1px solid #000; */
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
     position: relative;
-  }
-  
-  ._container ._title {
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 20px;
+    
+}
+
+.pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-top: 50px;
+    margin-bottom: 150px; */
+}
+
+@media (min-width: 768px) {
+    ._container {
+        flex: 0 0 calc(33.333% - 20px);
+    }
+ 
+
+}
+
+._container ._title {
     font-size: 2rem;
     font-weight: 500;
     color: #333;
-  }
-  
-  ._container ._price {
+}
+
+._container ._price {
     color: #007bff;
     font-weight: 700;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin: 10px 0;
-  }
+}
 
-  ._container span {
+._container span {
     font-size: 1.2rem;
-  }
-  
-  ._container ._description {
+}
+
+._container ._description {
     color: #3b3b3b;
     font-size: 1.1rem;
     margin: 10px 0 10px;
-  }
-  
-  ._container ._offer {
+}
+
+._container ._offer {
     display: block;
     color: #555;
     font-size: 1rem;
     margin-top: 10px;
-  }
-  
-  ._subscribe-button {
+}
+
+._subscribe-button {
     display: inline-block;
     padding: 5px 0;
     background-color: #007bff;
@@ -2462,25 +2482,25 @@ hhhhhh
     border-radius: 30px;
     font-size: 1.2rem;
     margin-top: 20px;
-    width: 50%;
+    width: 65%;
     font-weight: 500;
     transition: 0.2s ease;
-  }
-  
-  ._subscribe-button:hover {
+}
+
+._subscribe-button:hover {
     opacity: .85;
-  }
-  
-  .ribbon-wrap {
+}
+
+.ribbon-wrap {
     width: 80px;
     height: 80px;
     position: absolute;
     top: -20px;
     left: 50px;
     pointer-events: none;
-  }
-  
-  .ribbon {
+}
+
+.ribbon {
     width: 200px;
     font-size: 0.8rem;
     text-align: center;
@@ -2492,10 +2512,9 @@ hhhhhh
     transform: rotate(-45deg);
     right: -10px;
     top: 55%;
-  }
+}
 
-.reseller_pricing_wrapper
-{
+.reseller_pricing_wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
