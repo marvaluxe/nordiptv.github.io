@@ -17,15 +17,126 @@ for (i = 0; i < acc.length; i++) {
 }
 
  
-//const faqs = document.querySelectorAll(".fq");
- 
-//faqs.forEach((fq)=>{
- // fq.addEventListener("click" , ()=> {
-//fq.classList.toggle("active");
 
- // })
-//}
-//);
+
+
+// lang
+
+// function changeLang(language, el) {
+//   var container = document.querySelector('.chooseLang').classList;
+//   el = el.classList;
+
+//   if (container.contains('open')) {
+//       container.remove('open');
+//       if (!el.contains('chosen')) {
+//           document.querySelector('.chooseLang .chosen').classList.remove('chosen');
+//           el.add('chosen');
+
+         
+//           var languageFileName = getLanguageFileName(language);
+//           window.location.href = languageFileName;
+
+//           console.log(language + ' chosen');
+//       }
+//       return;
+//   }
+
+//   container.add('open');
+// }
+
+
+// function getLanguageFileName(language) {
+//   return 'index_' + language + '.html';
+// }
+// lang
+
+
+function changeLang(language, el) {
+  // Get the class list of the element with the 'chooseLang' class
+  var container = document.querySelector('.chooseLang').classList;
+  // Get the class list of the element that triggered the function
+  el = el.classList;
+
+  // Check if the language selection container is open
+  if (container.contains('open')) {
+      // If open, close it
+      container.remove('open');
+      // Check if the clicked language is not already chosen
+      if (!el.contains('chosen')) {
+          // Remove the 'chosen' class from the previously chosen language
+          document.querySelector('.chooseLang .chosen').classList.remove('chosen');
+          // Add the 'chosen' class to the clicked language
+          el.add('chosen');
+
+          // Redirect the user to the corresponding HTML file for the selected language
+          var languageFileName = getLanguageFileName(language);
+          window.location.href = languageFileName;
+
+          // Log the selected language to the console
+          console.log(language + ' chosen');
+      }
+      return;
+  }
+
+  // If the language selection container is closed, open it
+  container.add('open');
+}
+
+// Function to get the corresponding HTML file for the selected language
+function getLanguageFileName(language) {
+  // Default to 'index.html' if the language is English, else use 'index_<language>.html'
+  return language === 'en' ? 'index.html' : 'index_' + language + '.html';
+}
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+	$(".nav-link").on('click', function(event) {
+
+    	if (this.hash !== "") {
+
+			event.preventDefault();
+
+			var hash = this.hash;
+
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 700, function(){
+				window.location.hash = hash;
+			});
+      	} 
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
 
 const faqs = document.querySelectorAll(".fq");
 let activeFaq = null;
