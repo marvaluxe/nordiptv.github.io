@@ -1,15 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Cairo:wght@300;400;500;600&family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap');
 body {
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     background: #ffffff;
     margin: 0;
-
+ 
 }
-
+body[lang="ar"] {
+    background: red;
+}
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+ .ar{
+     /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    /* font-family: 'Noto Sans', sans-serif;  */
+ }
+body {
+    font-family: 'YourCustomFont', sans-serif; /* Use your custom font as the primary font */
+}
+
+/* Additional styling for your website */
 
 /* header1 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
@@ -2568,6 +2583,7 @@ hhhhhh
     /* margin-top: 30px; */
     width:1%;
     /* background-color: red; */
+    margin-top: 0px;
   }
   .chooseLang div {
     height: 60px;
