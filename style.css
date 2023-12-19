@@ -182,7 +182,7 @@ body {
     .custom-navbar a {
         display: block;
         font-size: 1.1rem;
-        margin: 1.5rem 0;
+        margin: 1.1rem 0;
         text-align: center;
         transform: translateY(-10px);
         transition: .3s ease;
