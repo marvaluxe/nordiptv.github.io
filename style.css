@@ -135,7 +135,10 @@ body {
     }
 
 }
-
+.answer p >span
+{
+   font-weight: bold;
+}
 
 
 @media (max-width: 768px) {
@@ -1614,6 +1617,7 @@ section div h1 {
 .fq_title {
     font-size: 2rem;
     margin: 1rem 0rem;
+    color: white;
 }
 
 .fq_title2 {
@@ -1643,7 +1647,7 @@ section div h1 {
 
 .question>h3 {
     font-size: 1.3rem;
-
+color: white;
 }
 
 .answer {
