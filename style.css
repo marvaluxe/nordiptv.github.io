@@ -210,13 +210,13 @@ body {
 
 .center-content h2 {
     font-size: 1.3rem;
-    color: #2284e6;
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
 .center-content h1 {
     font-size: 1.7rem;
-    color: #2284e6;
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
@@ -960,7 +960,7 @@ li {
 .prix::before {
     font-size: 25px;
     position: absolute;
-    content: "Dhs";
+    content: "99";
     right: 7px;
 
 }
@@ -968,7 +968,7 @@ li {
 .prix2::before {
     font-size: 25px;
     position: absolute;
-    content: "Dhs";
+    content: "99";
     right: -7px;
 
 }
@@ -1869,11 +1869,15 @@ color: white;
 
 .content_chmp h1 {
     color: white;
+   
     text-shadow: 0px 1px 13px rgba(0, 0, 0, 0.6);
-
-
 }
-
+.content_chmp h3 {
+    color: white; 
+    text-align: center;
+    font-size: 15px;
+    text-shadow: 0px 1px 13px rgba(0, 0, 0, 0.6);
+}
 /* Additional styling for your specific SVG paths */
 .elementor-shape-fill {
     fill: #4485fc;
@@ -1906,8 +1910,14 @@ color: white;
         /* font-size: calc(1.2 + 3.3vw); */
         font-size: 20px;
         text-align: center;
+        color: white;
     }
-
+    .content_chmp h3 {
+        /* font-size: calc(1.2 + 3.3vw); */
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
     .container_chmp {
         position: relative;
         height: 40vh;
@@ -2664,3 +2674,6 @@ hhhhhh
     opacity: 1;
     z-index: 1;
 }
+
+
+/*  */
